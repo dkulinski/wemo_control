@@ -46,5 +46,7 @@ if __name__ == '__main__':
         get_state(args.state)
     elif args.off:
         set_power(args.off, False)
-    else:
+    elif args.on:
         set_power(args.on, True)
+    else:
+        parser.print_help()
